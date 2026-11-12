@@ -1,0 +1,25 @@
+#inicio {
+    .flex();
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    text-align: left;
+
+    @media (max-width: @breaks[mobile]) {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+
+.foto-perfil {
+    width: 260px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 130px 130px 15px 15px;
+    border: 5px solid var(--principal);
+}
+
+#saludo {
+    font-size: 18px;
+    margin: 10px 0 25px;
+}

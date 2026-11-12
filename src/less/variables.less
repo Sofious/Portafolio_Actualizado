@@ -1,0 +1,32 @@
+/* Colores */
+@principal: #d63384;
+@blanco: #ffffff;
+
+/* Tema claro */
+@fondo-claro: #f5f7fa;
+@texto-claro: #222;
+@tarjeta-clara: #ffffff;
+
+/* Tema oscuro */
+@fondo-oscuro: #1e1e2e;
+@texto-oscuro: #eeeeee;
+@tarjeta-oscura: #2c2c3e;
+
+@breaks: {
+    mobile: 600px;
+}
+
+/* El tema se cambia con JavaScript (clase "oscuro" en el body),
+   por eso se guarda en variables CSS que el navegador sí puede cambiar */
+:root {
+    --fondo: @fondo-claro;
+    --texto: @texto-claro;
+    --principal: @principal;
+    --tarjeta: @tarjeta-clara;
+}
+
+body.oscuro {
+    --fondo: @fondo-oscuro;
+    --texto: @texto-oscuro;
+    --tarjeta: @tarjeta-oscura;
+}

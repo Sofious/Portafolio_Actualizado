@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Daniela Álvarez</title>
+    <link rel="stylesheet" href="/src/less/style.less">
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <header>
+        <nav>
+            <span class="logo">Daniela Álvarez</span>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button id="btn-tema">🌙</button>
+        </nav>
+    </header>
+
+    <!-- Sección de inicio con foto de perfil -->
+    <section id="inicio">
+        <div class="inicio-texto">
+            <h1>Daniela Sofia Álvarez Reyes</h1>
+            <p id="saludo"></p>
+            <a href="#proyectos" class="boton">Ver mis proyectos</a>
+        </div>
+        <img src="/src/img/foto.jpg" alt="Foto de perfil de Daniela Álvarez" class="foto-perfil">
+    </section>
+
+    <!-- Biografía -->
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>
+            Soy estudiante de la Universidad Católica de Honduras (UNICAH) en Tegucigalpa.
+            Me apasiona el desarrollo web y de software, y disfruto crear soluciones
+            que ayuden a negocios y personas a organizar mejor su información.
+        </p>
+        <h3>Habilidades</h3>
+        <ul class="habilidades">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>C# / .NET</li>
+            <li>SQL Server</li>
+            <li>Git y GitHub</li>
+        </ul>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos">
+        <h2>Mis proyectos</h2>
+        <div class="tarjetas">
+            <article class="tarjeta">
+                <h3>Villa Montecarlo</h3>
+                <p>Sitio web para un área de eventos con cotizador interactivo en HTML, CSS y JavaScript.</p>
+            </article>
+            <article class="tarjeta">
+                <h3>SPEED_NET</h3>
+                <p>Sitio web para un proveedor de internet y cable, con información de servicios y planes.</p>
+            </article>
+            <article class="tarjeta">
+                <h3>Sistema Pollos Del Rancho</h3>
+                <p>Sistema de ventas, inventario y control operativo en C#/.NET con SQL Server.</p>
+            </article>
+            <article class="tarjeta">
+                <h3>Base de datos de revistas</h3>
+                <p>Diseño de una base de datos para gestionar revistas, artículos y autores.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>📧 Correo: <a href="mailto:daniela.reyeshn23@gmail.com">daniela.reyeshn23@gmail.com</a></p>
+        <p>💻 GitHub: <a href="https://github.com/Sofious" target="_blank" rel="noopener noreferrer">github.com/Sofious</a></p>
+
+        <form id="formulario">
+            <input type="text" id="nombre" placeholder="Tu nombre">
+            <input type="email" id="correo" placeholder="Tu correo">
+            <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+            <button type="submit" class="boton">Enviar</button>
+            <p id="respuesta"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="anio"></span> Daniela Álvarez. Todos los derechos reservados.</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
